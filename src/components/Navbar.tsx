@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className={`navbar-toggler-icon ${isDarkMode ? 'bg-white' : 'bg-black'}`} />
+          <span className="navbar-toggler-icon" />
         </button>
         <div className={`collapse navbar-collapse ${isDarkMode ? 'text-white' : 'text-black'}`} id="navbarNav">
           <ul className="navbar-nav ms-auto">
@@ -40,9 +40,6 @@ const Navbar: React.FC = () => {
             </li>
           </ul>
         </div>
-        <button className={`btn btn-sm ${isDarkMode ? 'btn-outline-light' : 'btn-outline-dark'}`} onClick={toggleDarkMode}>
-          {isDarkMode ? 'Light Mode' : 'Dark Mode'}
-        </button>
       </div>
     </nav>
   );

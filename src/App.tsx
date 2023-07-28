@@ -3,9 +3,10 @@ import './App.css'
 import About from './components/About'
 import Contact from './components/Contact'
 import Navbar from './components/Navbar'
-import Projects from './components/Projects'
+import Experience from './components/Experience'
 import Skills from './components/Skills'
 import ThemeContext from './ThemeContext'
+import Toggle from './components/Toggle'
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -19,9 +20,10 @@ function App() {
       <div className={`App ${isDarkMode ? 'dark' : 'light'}`}>
         <Navbar />
         <About />
+        <Experience />
         <Skills />
-        <Projects />
         <Contact />
+        <Toggle />
       </div>
     </ThemeContext.Provider>
   );
