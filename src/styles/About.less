@@ -1,0 +1,60 @@
+/* Base styles for the container */
+.about-me-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+
+  //make everything change smoothly
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+
+  // Bootstrap light and dark classes
+  &.navbar-light {
+    background-color: #f8f9fa;
+    color: #212529;
+  }
+
+  &.navbar-dark {
+    background-color: #343a40;
+    color: #f8f9fa;
+  }
+
+
+  &.light {
+    background-color: #f8f9fa;
+    color: #212529;
+  }
+
+  &.dark {
+    background-color: #343a40;
+    color: #f8f9fa;
+  }
+
+  /* Styles for responsive layout on mobile devices */
+  @media (max-width: 767px) {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+/* Styles for the left section - Name, title, all that*/
+.left-section {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+}
+
+/* Styles for the right section - maybe some fun flashy JS + CSS art */
+.right-section {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+}
