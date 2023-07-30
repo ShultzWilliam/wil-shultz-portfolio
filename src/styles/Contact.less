@@ -1,0 +1,64 @@
+.contact-container {
+    padding: 2rem;
+  
+    &.light {
+      background-color: #f8f9fa;
+      color: #212529;
+    }
+  
+    &.dark {
+      background-color: #343a40;
+      color: #f8f9fa;
+    }
+  
+    h2 {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+  
+    p {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+  
+    .contact-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  
+      .contact-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem 1rem;
+        margin: 0.5rem;
+        font-size: 1rem;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: background-color 0.2s ease;
+  
+        &.light {
+          background-color: #007bff;
+          color: #fff;
+  
+          &:hover {
+            background-color: #0056b3;
+          }
+        }
+  
+        &.dark {
+          background-color: #007bff; /* You can customize this color for dark mode */
+          color: #fff;
+  
+          &:hover {
+            background-color: #0056b3; /* You can customize this color for dark mode */
+          }
+        }
+  
+        .button-icon {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+  
