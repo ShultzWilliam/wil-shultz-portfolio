@@ -1,0 +1,105 @@
+// Skills.less
+.skills-container {
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 1200px;
+  
+    h2 {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+  
+    .job-dropdown {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+  
+      select {
+        padding: 0.5rem;
+        font-size: 1rem;
+      }
+    }
+  
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1rem;
+      justify-content: center;
+  
+      @media (max-width: 1200px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+  
+      @media (max-width: 767px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  
+    .skill-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      background-color: #f8f8f8;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.2s ease;
+      width: 100%;
+      height: 100%;
+  
+      &.fade-in {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+        pointer-events: auto;
+      }
+    
+      &.fade-out {
+        opacity: 0.3;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+      }
+
+      .icon-wrapper {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+      }
+  
+      &.light {
+        background-color: #f8f9fa;
+        color: #212529;
+      }
+  
+      &.dark {
+        background-color: #343a40;
+        color: #f8f9fa;
+      }
+  
+      .skill-name {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+  
+      .used-in {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        @media (max-width: 767px) {
+            display: none;
+        }
+  
+        li {
+          font-size: 0.9rem;
+          color: #666;
+          margin-bottom: 0.3rem;
+        }
+      }
+  
+      @media (max-width: 767px) {
+        flex: 0 0 100%;
+      }
+    }
+  }
+  
