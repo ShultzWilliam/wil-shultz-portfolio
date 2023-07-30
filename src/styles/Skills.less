@@ -1,9 +1,15 @@
 // Skills.less
 .skills-container {
-    margin: 2rem auto;
     padding: 2rem;
-    max-width: 1200px;
-  
+    &.light {
+      background-color: #f8f9fa;
+      color: #212529;
+    }
+
+    &.dark {
+      background-color: #343a40;
+      color: #f8f9fa;
+    }
     h2 {
       margin-bottom: 1rem;
       text-align: center;
@@ -82,13 +88,7 @@
       }
   
       .used-in {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-
-        @media (max-width: 767px) {
-            display: none;
-        }
+        display: none;
   
         li {
           font-size: 0.9rem;
