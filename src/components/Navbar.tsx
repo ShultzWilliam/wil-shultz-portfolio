@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import ThemeContext from '../ThemeContext';
 
 const Navbar: React.FC = () => {
-  const { isDarkMode, toggleDarkMode } = useContext(ThemeContext);
+  const { isDarkMode } = useContext(ThemeContext);
 
   return (
     <nav className={`navbar navbar-expand-lg ${isDarkMode ? 'navbar-dark bg-dark' : 'navbar-light bg-light'}`}>
