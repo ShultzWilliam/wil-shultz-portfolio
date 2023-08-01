@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './App.css'
+import './styles/App.less'
 import About from './components/About'
 import Contact from './components/Contact'
 import Navbar from './components/Navbar'

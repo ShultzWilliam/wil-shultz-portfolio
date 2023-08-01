@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import ThemeContext from '../ThemeContext';
+import "../styles/Navbar.less";
 
 const Navbar: React.FC = () => {
   const { isDarkMode } = useContext(ThemeContext);

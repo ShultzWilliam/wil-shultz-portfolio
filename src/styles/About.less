@@ -1,3 +1,9 @@
+//About.less
+//   styles the About component (hero)
+
+//imports
+@import "variables.less";
+
 /* Base styles for the container */
 .about-me-container {
   display: flex;
@@ -6,31 +12,17 @@
   height: 100vh;
   padding: 20px;
 
-  //make everything change smoothly
-  transition: background-color 0.3s ease, color 0.3s ease;
-
-
-  // Bootstrap light and dark classes
-  &.navbar-light {
-    background-color: #f8f9fa;
-    color: #212529;
-  }
-
-  &.navbar-dark {
-    background-color: #343a40;
-    color: #f8f9fa;
-  }
-
-
   &.light {
-    background-color: #f8f9fa;
-    color: #212529;
+    color: @font-color-primary-light;
   }
 
   &.dark {
-    background-color: #343a40;
-    color: #f8f9fa;
+    color: @font-color-primary-dark;
   }
+
+
+  //make everything change smoothly
+  transition: background-color 0.3s ease, color 0.3s ease;
 
   /* Styles for responsive layout on mobile devices */
   @media (max-width: 767px) {

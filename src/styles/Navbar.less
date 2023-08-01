@@ -1,6 +1,20 @@
+//imports
+@import "variables.less";
+
 .navbar {
 
     //make everything change smoothly
     transition: background-color 0.3s ease, color 0.3s ease;
+
+        // Light mode styles
+    &.navbar-light {
+      background-color: @background-card-light !important;
+      color: @font-color-primary-light;
+    }
+  
+    &.navbar-dark {
+      background-color: @background-card-dark !important;
+      color: @font-color-primary-dark;
+    }
 }
 

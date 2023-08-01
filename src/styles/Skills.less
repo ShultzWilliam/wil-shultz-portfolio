@@ -1,13 +1,16 @@
 // Skills.less
+
+//imports
+@import "variables.less";
+
+
 .skills-container {
     padding: 2rem;
     &.light {
-      background-color: #f8f9fa;
       color: #212529;
     }
 
     &.dark {
-      background-color: #343a40;
       color: #f8f9fa;
     }
     h2 {
@@ -71,15 +74,16 @@
         margin-bottom: 0.5rem;
       }
   
-      &.light {
-        background-color: #f8f9fa;
-        color: #212529;
-      }
+    // Light mode styles
+    &.light {
+      background-color: @background-card-light;
+      color: @font-color-primary-light;
+    }
   
-      &.dark {
-        background-color: #343a40;
-        color: #f8f9fa;
-      }
+    &.dark {
+      background-color: @background-card-dark;
+      color: @font-color-primary-dark;
+    }
   
       .skill-name {
         font-size: 1.2rem;

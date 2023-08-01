@@ -1,3 +1,6 @@
+//imports
+@import "variables.less";
+
 .experiences-container {
     display: flex;
     flex-direction: column;
@@ -7,15 +10,13 @@
     padding: 20px;
   
     // Universal transition properties for all transitions
-    transition: background-color 0.2s ease, color 0.2s ease;
+    transition: all 0.2s ease;
   
     &.light {
-      background-color: #f8f9fa;
       color: #212529;
     }
   
     &.dark {
-      background-color: #343a40;
       color: #f8f9fa;
     }
   
@@ -50,14 +51,13 @@
   
     // Light mode styles
     &.light {
-      background-color: #f8f9fa;
-      color: #212529;
+      background-color: @background-card-light;
+      color: @font-color-primary-light;
     }
   
-    // Dark mode styles
     &.dark {
-      background-color: #343a40;
-      color: #f8f9fa;
+      background-color: @background-card-dark;
+      color: @font-color-primary-dark;
     }
   
     // Styles for responsive layout on mobile devices
