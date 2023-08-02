@@ -1,9 +1,8 @@
 // Skills.tsx
 import React, { useState, useContext } from 'react';
-import { FaReact, FaJs, FaHtml5, FaCss3Alt } from 'react-icons/fa';
-import { IoLogoNodejs } from 'react-icons/io';
-import { DiMongodb, DiMysql } from 'react-icons/di';
-import { AiOutlineAntDesign } from 'react-icons/ai';
+import { FaReact, FaJs, FaHtml5, FaCss3Alt, FaVuejs, FaBootstrap, FaLess, FaPython, FaLinux, FaNetworkWired } from 'react-icons/fa';
+import { DiMsqlServer } from 'react-icons/di';
+import { SiDotnet, SiVite } from 'react-icons/si'
 import '../styles/Skills.less';
 import ThemeContext from '../ThemeContext';
 
@@ -15,47 +14,71 @@ interface Skill {
 }
 
 const allSkills: Skill[] = [
-  {
-    name: 'React',
-    icon: <FaReact />,
-    usedIn: ['Job 1', 'Job 2'],
-  },
-  {
-    name: 'JavaScript',
-    icon: <FaJs />,
-    usedIn: ['Front-end development', 'Job 2', 'Job 3'],
-  },
-  {
+    {
     name: 'HTML',
     icon: <FaHtml5 />,
-    usedIn: ['Web development projects', 'Job 1', 'Job 3'],
+    usedIn: ['Front-end Developer - Simplepart LLC','Coursework - University of Toledo','Personal Projects'],
   },
   {
     name: 'CSS',
     icon: <FaCss3Alt />,
-    usedIn: ['Web development projects', 'Job 1', 'Job 2'],
+    usedIn: ['Front-end Developer - Simplepart LLC','Coursework - University of Toledo','Personal Projects'],
   },
   {
-    name: 'Node.js',
-    icon: <IoLogoNodejs />,
-    usedIn: ['Server-side development', 'Job 2'],
+    name: 'JavaScript',
+    icon: <FaJs />,
+    usedIn: ['Front-end Developer - Simplepart LLC','Coursework - University of Toledo','Personal Projects'],
   },
   {
-    name: 'MongoDB',
-    icon: <DiMongodb />,
-    usedIn: ['Database management', 'Job 1'],
+    name: 'Vuejs',
+    icon: <FaVuejs />,
+    usedIn: ['Front-end Developer - Simplepart LLC','Personal Projects'],
   },
   {
-    name: 'MySQL',
-    icon: <DiMysql />,
-    usedIn: ['Database management', 'Job 3'],
+    name: 'React',
+    icon: <FaReact />,
+    usedIn: ['Job 1', 'Job 2','Personal Projects'],
   },
   {
-    name: 'Ant Design',
-    icon: <AiOutlineAntDesign />,
-    usedIn: ['Web development projects', 'Job 1', 'Job 2'],
+    name: 'Bootstrap',
+    icon: <FaBootstrap />,
+    usedIn: ['Front-end Developer - Simplepart LLC','Personal Projects'],
   },
-  // Add more skills as needed
+  {
+    name: 'Less',
+    icon: <FaLess />,
+    usedIn: ['Front-end Developer - Simplepart LLC','Personal Projects'],
+  },
+  {
+    name: '.NET',
+    icon: <SiDotnet />,
+    usedIn: ['Front-end Developer - Simplepart LLC','Coursework - University of Toledo'],
+  },
+  {
+    name: 'Vite',
+    icon: <SiVite />,
+    usedIn: ['Personal Projects'],
+  },
+  {
+    name: 'Python',
+    icon: <FaPython />,
+    usedIn: ['System Integrator - Meta','Coursework - University of Toledo','Personal Projects'],
+  },
+  {
+    name: 'Linux',
+    icon: <FaLinux />,
+    usedIn: ['System Integrator - Meta','Coursework - University of Toledo','Personal Projects'],
+  },
+  {
+    name: 'Networks',
+    icon: <FaNetworkWired />,
+    usedIn: ['System Integrator - Meta'],
+  },
+  {
+    name: 'MS SQL',
+    icon: <DiMsqlServer />,
+    usedIn: ['Front-end Developer - Simplepart LLC'],
+  }
 ];
 
 const Skills: React.FC = () => {
@@ -81,14 +104,17 @@ const Skills: React.FC = () => {
 
   return (
     <div className={`skills-container ${isDarkMode ? 'dark' : 'light'}`}>
-      <h2>Skills</h2>
-      <div className="job-dropdown">
-        <select value={selectedJob} onChange={(e) => handleJobChange(e.target.value)}>
-          <option value="All Jobs">All Jobs</option>
-          <option value="Job 1">Job 1</option>
-          <option value="Job 2">Job 2</option>
-          <option value="Job 3">Job 3</option>
-        </select>
+      <div className="container-lad">
+        <h2>Skills</h2>
+        <div className="job-dropdown">
+          <select value={selectedJob} onChange={(e) => handleJobChange(e.target.value)}>
+            <option value="All Jobs">All Jobs</option>
+            <option value="Front-end Developer - Simplepart LLC">Front-end Developer - Simplepart LLC</option>
+            <option value="System Integrator - Meta">System Integrator - Meta</option>
+            <option value="Coursework - University of Toledo">Coursework - University of Toledo</option>
+            <option value="Personal Projects">Personal Projects</option>
+          </select>
+        </div>
       </div>
       <div className="skills-grid">
         {displayedSkills.map((skill, index) => (
