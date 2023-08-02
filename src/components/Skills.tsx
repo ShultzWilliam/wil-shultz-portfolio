@@ -106,8 +106,8 @@ const Skills: React.FC = () => {
     <div className={`skills-container ${isDarkMode ? 'dark' : 'light'}`}>
       <div className="container-lad">
         <h2>Skills</h2>
-        <div className="job-dropdown">
-          <select value={selectedJob} onChange={(e) => handleJobChange(e.target.value)}>
+        <div className={`job-dropdown ${isDarkMode ? 'dark' : 'light'}`}>
+          <select className={`job-dropdown ${isDarkMode ? 'dark' : 'light'}`} value={selectedJob} onChange={(e) => handleJobChange(e.target.value)}>
             <option value="All Jobs">All Jobs</option>
             <option value="Front-end Developer - Simplepart LLC">Front-end Developer - Simplepart LLC</option>
             <option value="System Integrator - Meta">System Integrator - Meta</option>
