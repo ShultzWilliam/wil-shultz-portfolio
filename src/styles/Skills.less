@@ -15,6 +15,23 @@
     flex-flow: column;
   }
   .job-dropdown {
+    @media (min-width: calc(@screen-tablet + 1px)) {
+      position: absolute;
+      right: 0;
+      margin-right: calc(5% + 1rem);
+    }
+
+    @media (max-width: 1200px) {
+      margin-right: 1rem;
+    }
+
+    @media(max-width: @screen-tablet) {
+      margin: 0;
+      select {
+        width: 100%;
+      }
+    }
+
     select {
       border-radius: 8px;
       border: none;
@@ -30,23 +47,8 @@
         background-color: @background-card-dark;
       }
     }
-    @media (min-width: calc(@screen-tablet + 1px)) {
-      position: absolute;
-      right: 0;
-      margin-right: calc(5% + 2rem);
-    }
-    @media (max-width: 1200px) {
-      margin-right: 2rem;
-    }
-      @media (max-width: @screen-tablet) {
-        position: relative;
-        margin-right: 0;
-        select {
-          width: 100%;
-        }
-      }
-    }
   }
+}
 
 
 .skills-container {
