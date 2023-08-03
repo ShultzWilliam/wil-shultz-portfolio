@@ -8,22 +8,18 @@ const Experience: React.FC = () => {
   // Sample data for experience cards (replace with your own data)
   const experiences = [
     {
-      company: 'Example Company 1',
+      company: 'Simplepart LLC',
       position: 'Front-End Developer',
-      duration: 'June 2019 - Present',
-      description: 'Responsible for building modern web applications using React and TypeScript.',
+      duration: 'September 2022 - Present',
+      description: 'Creating modern e-commerce web applications for automobile OEMS and dealership. \n\nConsistently delivering new sites for clients such as Subaru, BMW, Kia, and more in an agile SDE.',
+      skills: ['HTML', 'CSS', 'JS', 'Vuejs', 'Bootstrap', 'Less', '.NET', 'MSSQL']
     },
     {
-      company: 'Example Company 2',
-      position: 'Software Engineer',
-      duration: 'January 2017 - May 2019',
-      description: 'Worked on developing backend systems using Node.js and Express.',
-    },
-    {
-      company: 'Example Company 3',
-      position: 'UI/UX Designer',
-      duration: 'July 2015 - December 2016',
-      description: 'Designed user interfaces and created wireframes for web and mobile applications.',
+      company: 'Meta Reality Labs',
+      position: 'System Integrator',
+      duration: 'March 2022 - July 2022',
+      description: 'Created automation tools and scripts for virtual reality research projects.\n\nPerformed research analysis to constantly reduce roadblocks and improve data collection on large scale computer networks.',
+      skills: ['Python', 'Powershell', 'Bash', 'Linux', 'Computer Networking', 'Root-cause analysis']
     },
     // Add more experiences as needed
   ];
@@ -38,6 +34,9 @@ const Experience: React.FC = () => {
             <p>{experience.position}</p>
             <p>{experience.duration}</p>
             <p>{experience.description}</p>
+            <div className="skills">
+              <p> {experience.skills.join(' ')}</p>
+            </div>
           </div>
         ))}
       </div>
