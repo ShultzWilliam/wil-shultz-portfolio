@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { FaSun, FaMoon } from 'react-icons/fa'; // You can choose different icons from different icon sets as needed
 import '../styles/Toggle.less';
 import ThemeContext from '../ThemeContext';
 
@@ -7,7 +8,7 @@ const Toggle: React.FC = () => {
 
   return (
     <button className={`toggle-button ${isDarkMode ? 'dark' : 'light'}`} onClick={toggleDarkMode}>
-      {isDarkMode ? 'Light Mode' : 'Dark Mode'}
+      {isDarkMode ? <FaSun className="icon" /> : <FaMoon className="icon" />}
     </button>
   );
 };
