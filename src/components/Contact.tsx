@@ -11,7 +11,7 @@ const Contact: React.FC = () => {
   const linkedinUrl = 'https://www.linkedin.com/in/wilshultz';
 
   return (
-    <div className={`contact-container ${isDarkMode ? 'dark' : 'light'}`}>
+    <div id='Contact' className={`contact-container ${isDarkMode ? 'dark' : 'light'}`}>
       <h2>Contact info</h2>
       <p>
         Wanna get in touch? If so, please feel free to send me an email or a message on LinkedIn/GitHub,

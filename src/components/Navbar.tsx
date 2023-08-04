@@ -25,17 +25,22 @@ const Navbar: React.FC = () => {
         <div className={`collapse navbar-collapse ${isDarkMode ? 'text-white' : 'text-black'}`} id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className={`nav-link ${isDarkMode ? 'text-white' : 'text-black'}`} href="#about">
+              <a className={`nav-link ${isDarkMode ? 'text-white' : 'text-black'}`} href="#About">
                 About
               </a>
             </li>
             <li className="nav-item">
-              <a className={`nav-link ${isDarkMode ? 'text-white' : 'text-black'}`} href="#projects">
-                Projects
+              <a className={`nav-link ${isDarkMode ? 'text-white' : 'text-black'}`} href="#Experience">
+                Experience
               </a>
             </li>
             <li className="nav-item">
-              <a className={`nav-link ${isDarkMode ? 'text-white' : 'text-black'}`} href="#contact">
+              <a className={`nav-link ${isDarkMode ? 'text-white' : 'text-black'}`} href="#Skills">
+                Skills
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className={`nav-link ${isDarkMode ? 'text-white' : 'text-black'}`} href="#Contact">
                 Contact
               </a>
             </li>

@@ -2,19 +2,24 @@
 @import "variables.less";
 
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; // Adjust the z-index as needed
 
-    //make everything change smoothly
+    // Make everything change smoothly
     transition: background-color 0.3s ease, color 0.3s ease;
 
-        // Light mode styles
+    // Light mode styles
     &.navbar-light {
-      background-color: @background-card-light !important;
-      color: @font-color-primary-light;
+        background-color: @background-card-light !important;
+        color: @font-color-primary-light;
     }
   
+    // Dark mode styles
     &.navbar-dark {
-      background-color: @background-card-dark !important;
-      color: @font-color-primary-dark;
+        background-color: @background-card-dark !important;
+        color: @font-color-primary-dark;
     }
 }
-

@@ -6,7 +6,7 @@ const About: React.FC = () => {
   const { isDarkMode } = useContext(ThemeContext);
 
   return (
-    <div className={`about-me-container ${isDarkMode ? 'dark' : 'light'}`}>
+    <div id='About' className={`about-me-container ${isDarkMode ? 'dark' : 'light'}`}>
       <div className="left-section">
         <h1>Some Dev Dude</h1>
         <p className="subtitle">Front-End Developer I guess</p>

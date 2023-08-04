@@ -103,7 +103,7 @@ const Skills: React.FC = () => {
   };
 
   return (
-    <div className={`skills-container ${isDarkMode ? 'dark' : 'light'}`}>
+    <div id='Skills' className={`skills-container ${isDarkMode ? 'dark' : 'light'}`}>
       <div className="container-lad">
         <h2>Skills</h2>
         <div className={`job-dropdown ${isDarkMode ? 'dark' : 'light'}`}>

@@ -25,7 +25,7 @@ const Experience: React.FC = () => {
   ];
 
   return (
-    <div className={`experiences-container ${isDarkMode ? 'dark' : 'light'}`}>
+    <div id='Experience' className={`experiences-container ${isDarkMode ? 'dark' : 'light'}`}>
       <h2>Work Experience</h2>
       <div className="experience-cards">
         {experiences.map((experience, index) => (
