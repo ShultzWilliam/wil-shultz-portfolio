@@ -3,13 +3,6 @@
 .App {
     &.light {
         background-color: @background-primary-light;
-        .top {
-            background-image: url('../assets/transitions/top.svg');
-        }
-        .bot {
-            background-image: url('../assets/transitions/bot.svg');
-
-        }
     }
 
     &.dark {
@@ -19,12 +12,4 @@
 
 .App {
     transition: all 0.2s ease;
-}
-
-.transition {
-    aspect-ratio: 9/2;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }

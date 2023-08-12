@@ -20,11 +20,8 @@ function App() {
       <div className={`App ${isDarkMode ? 'dark' : 'light'}`}>
         <Navbar />
         <About />
-        <div className="transition top"></div>
         <Experience />
-        <div className="transition bot"></div>
         <Skills />
-        <div className="transition top"></div>
         <Contact />
         <Toggle />
       </div>
