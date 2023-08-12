@@ -9,11 +9,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 750px;
   padding: 20px;
 
   &.light {
     color: @font-color-primary-light;
+    background-color: #FF7D00;
   }
 
   &.dark {
@@ -25,26 +26,15 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 
   /* Styles for responsive layout on mobile devices */
-  @media (max-width: 767px) {
+  @media (max-width: @screen-tablet) {
     flex-direction: column;
-    height: auto;
+    height: 500px;
   }
 }
 
 /* Styles for the left section - Name, title, all that*/
-.left-section {
+.main-section {
   flex: 1;
-  max-width: 50%;
-  display: flex;
-  justify-content: center;
-  flex-flow: column;
-  align-items: center;
-}
-
-/* Styles for the right section - maybe some fun flashy JS + CSS art */
-.right-section {
-  flex: 1;
-  max-width: 50%;
   display: flex;
   justify-content: center;
   flex-flow: column;

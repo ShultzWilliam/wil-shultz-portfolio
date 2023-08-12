@@ -7,20 +7,13 @@ const About: React.FC = () => {
 
   return (
     <div id='About' className={`about-me-container ${isDarkMode ? 'dark' : 'light'}`}>
-      <div className="left-section">
+      <div className="main-section">
         <h1>Some Dev Dude</h1>
         <p className="subtitle">Front-End Developer I guess</p>
         <p>
           This is some very interesting lorem ipsum text. Typing this out,
           I realize - I honestly don't remember any of the lorem ipsum text.
         </p>
-      </div>
-      <div className="right-section">
-        <div className="temp">
-            <p>
-                Placeholder text for some splashy art later
-            </p>
-        </div>
       </div>
     </div>
   );
