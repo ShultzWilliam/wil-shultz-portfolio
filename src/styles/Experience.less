@@ -28,7 +28,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 900px; // Set a maximum width for desktop view
+    max-width: 1400px; // Set a maximum width for desktop view
   
     // Styles for responsive layout on mobile devices
     @media (max-width: 767px) {
@@ -53,11 +53,27 @@
     &.light {
       background-color: @background-card-light;
       color: @font-color-primary-light;
+
+      h3 {
+        color: @font-color-primary-light;
+      }
+
+      p {
+        color: @font-color-secondary-light;
+      }
     }
   
     &.dark {
       background-color: @background-card-dark;
       color: @font-color-primary-dark;
+
+      h3 {
+        color: @font-color-primary-dark;
+      }
+
+      p {
+        color: @font-color-secondary-dark;
+      }
     }
   
     // Styles for responsive layout on mobile devices
@@ -67,4 +83,28 @@
     }
     
   }
-  
+
+
+  .experience-buttons {
+    display: flex;
+    justify-content: center;
+
+    .experience-button {
+      margin-top: 10px;
+      margin-right: 10px;
+      padding: 8px 16px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      width: 200px;
+      text-align: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;;
+    
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+    

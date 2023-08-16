@@ -11,16 +11,23 @@ const Experience: React.FC = () => {
       company: 'Simplepart LLC',
       position: 'Front-End Developer',
       duration: 'September 2022 - Present',
-      description: 'Creating modern e-commerce web applications for automobile OEMS and dealership. \n\nConsistently delivering new sites for clients such as Subaru, BMW, Kia, and more in an agile SDE.',
-      skills: ['HTML', 'CSS', 'JS', 'Vuejs', 'Bootstrap', 'Less', '.NET', 'MSSQL']
+      description: 'Creating modern e-commerce web applications for automobile OEMS and dealership. Consistently delivering new sites for clients such as Subaru, BMW, Kia, and more in an agile SDE.',
+      skills: ['HTML', 'CSS', 'JS', 'Vuejs', 'Bootstrap', 'Less', '.NET', 'MSSQL'],
+      links: [
+        { text: 'SimplePart Home', link: 'https://www.simplepart.com/' },
+        { text: 'Lexus Parts Site', link: 'https://parts.lexus.com/' }
+      ]
     },
     {
       company: 'Meta Reality Labs',
       position: 'System Integrator',
       duration: 'March 2022 - July 2022',
-      description: 'Created automation tools and scripts for virtual reality research projects.\n\nPerformed research analysis to constantly reduce roadblocks and improve data collection on large scale computer networks.',
-      skills: ['Python', 'Powershell', 'Bash', 'Linux', 'Computer Networking', 'Root-cause analysis']
-    },
+      description: 'Created automation tools and scripts for virtual reality research projects. Performed research analysis to constantly reduce roadblocks and improve data collection on large scale computer networks.',
+      skills: ['Python', 'Powershell', 'Bash', 'Linux', 'Computer Networking', 'Root-cause analysis'],
+      links: [
+        { text: 'Meta Reality Labs Site', link: 'https://about.meta.com/realitylabs/' }
+      ]
+    }
     // Add more experiences as needed
   ];
 
@@ -35,7 +42,20 @@ const Experience: React.FC = () => {
             <p>{experience.duration}</p>
             <p>{experience.description}</p>
             <div className="skills">
-              <p> {experience.skills.join(' ')}</p>
+              <p className='skill words'> {experience.skills.join(' ')}</p>
+            </div>
+            <div className="experience-buttons">
+              {experience.links.map((link, linkIndex) => (
+                <a
+                  key={linkIndex}
+                  href={link.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="experience-button"
+                >
+                  {link.text}
+                </a>
+              ))}
             </div>
           </div>
         ))}
