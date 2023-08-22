@@ -37,13 +37,13 @@
   }
   
   .experience-card {
-    flex: 0 0 calc(50% - 20px); // Three cards in a row for desktop view
     padding: 20px;
     background-color: #f8f8f8;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin: 10px;
     transition: background-color 0.2s ease;
+    width: 100%;
   
     &:hover {
       background-color: #e8e8e8;
@@ -80,6 +80,12 @@
     @media (max-width: 767px) {
       width: 100%;
       margin: 10px 0;
+      max-width: unset;
+      flex: unset;
+    }
+
+    @media (max-width: @screen-phone) {
+      max-width: 90vw;
     }
     
   }
